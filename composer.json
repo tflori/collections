@@ -1,35 +1,29 @@
 {
-    "name": "illuminate/collections",
-    "description": "The Illuminate Collections package.",
+    "name": "tflori/collections",
+    "description": "The Illuminate Collections package compatible with php 7.1.",
     "license": "MIT",
-    "homepage": "https://laravel.com",
-    "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
-    },
+    "homepage": "https://github.com/tflori/collections",
     "authors": [
         {
             "name": "Taylor Otwell",
             "email": "taylor@laravel.com"
+        },
+        {
+            "name": "Thomas Flori",
+            "email": "thflori@gmail.com"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "illuminate/contracts": "^8.0",
-        "illuminate/macroable": "^8.0"
+        "php": "^7.1|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Illuminate\\Support\\": ""
+            "Illuminate\\Support\\": "",
+            "Illuminate\\Contracts\\": "Contracts"
         },
         "files": [
             "helpers.php"
         ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "8.x-dev"
-        }
     },
     "suggest": {
         "symfony/var-dumper": "Required to use the dump method (^5.1.4)."
